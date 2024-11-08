@@ -4,12 +4,12 @@ import shutil
 from langchain_community.document_loaders import TextLoader, PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.schema.document import Document
-from langchain_community.vectorstores import Chroma
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_chroma import Chroma
+
 from get_embedding_function import get_embedding_function
 
 CHROMA_PATH = "chroma"
-DATA_PATH = "data/E_AS_lang.pdf"
+DATA_PATH = "data/E_AS_lang_Eng.pdf"
 
 def main():
 
